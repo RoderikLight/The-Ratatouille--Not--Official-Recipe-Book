@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cyan">#91c1c5</color>
+    <color name="wheat">#D3CE92</color>
+    <color name="gray">#A7A7A7</color>
 </resources>

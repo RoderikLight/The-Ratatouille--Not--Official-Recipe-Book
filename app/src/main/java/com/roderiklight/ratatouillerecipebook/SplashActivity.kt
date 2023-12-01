@@ -10,7 +10,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        val i = Intent(this, MainActivity::class.java)
+        val i = Intent(this, AuthActivity::class.java)
 
         val timer = object: CountDownTimer(3000, 1000){
             override fun onTick(millisUntilFinished: Long) {

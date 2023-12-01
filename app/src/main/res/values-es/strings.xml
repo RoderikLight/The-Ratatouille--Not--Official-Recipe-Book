@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Username">Usuario...</string>
+    <string name="password">Contraseña...</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="recipes">Recetas</string>
+    <string name="favorites">Favoritos</string>
+    <string name="my_recipes">Mis Recetas</string>
+    <string name="my_account">Mi Perfil</string>
+    <string name="settings">Opciones</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="close_app">Salir</string>
+    <string name="favorite">Favorito</string>
+</resources>

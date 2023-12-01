@@ -1,5 +1,17 @@
 <resources>
-    <string name="app_name">LaRatatouille</string>
+    <string name="app_name" translatable="false">LaRatatouille</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="Username">Username…</string>
+    <string name="password">Password…</string>
+    <string name="login">Login</string>
+    <string name="recipes">Recipes</string>
+    <string name="favorites">Favorites</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="my_account">My Account</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="close_app">Close App</string>
+    <string name="favorite">Favorite</string>
+    <string name="welcome_user">Welcome, Linguinni!</string>
 </resources>
