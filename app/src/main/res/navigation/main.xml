@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
             app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_listFragment2"
+            app:destination="@id/listFragment2" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -33,6 +36,15 @@
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment2"
+        android:name="com.roderiklight.ratatouillerecipebook.ListFragment2"
+        android:label="fragment_list2"
+        tools:layout="@layout/fragment_list2" >
+        <action
+            android:id="@+id/action_listFragment2_to_firstFragment"
             app:destination="@id/firstFragment" />
     </fragment>
 </navigation>

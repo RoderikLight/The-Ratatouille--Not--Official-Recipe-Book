@@ -16,7 +16,7 @@
         android:drawableLeft="@drawable/userimg"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/Username"
+        android:hint="@string/Username"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

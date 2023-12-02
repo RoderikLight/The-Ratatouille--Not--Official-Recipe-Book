@@ -7,26 +7,27 @@ import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.squareup.picasso.Picasso
 
-class RecipeAdapter(private var recipes: List<Recipe>): RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
+class FavAdapter(private var recipess: List<Recipe>): RecyclerView.Adapter<FavAdapter.RecipeViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
 
         val inflater = LayoutInflater.from(parent.context)
 
-        val view = inflater.inflate(R.layout.item_recipe, parent, false)
+        val view = inflater.inflate(R.layout.item_recipe2, parent, false)
         return RecipeViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
-        val country = recipes[position]
+        val country = recipess[position]
         holder.render(country)
 
         //aquí se aplica la lógica. ej: onClickListener
     }
 
     override fun getItemCount(): Int {
-        return recipes.size
+        return recipess.size
     }
 
     class RecipeViewHolder(view: View): RecyclerView.ViewHolder(view) {
@@ -38,11 +39,14 @@ class RecipeAdapter(private var recipes: List<Recipe>): RecyclerView.Adapter<Rec
 
         fun render(recipe: Recipe)
         {
-            name.text = recipe.name
-            description.text = recipe.desc
-            Picasso.get().load(recipe.image).into(image)
-            if (recipe.isfav == 1) {
-                checkbox.isChecked = true
+            if (recipe.isfav == 1){
+                name.text = recipe.name
+                description.text = recipe.desc
+                Picasso.get().load(recipe.image).into(image)
+                checkbox.isChecked
+            }
+            else{
+                RecyclerView.GONE
             }
         }
     }
